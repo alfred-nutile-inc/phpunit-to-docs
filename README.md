@@ -9,6 +9,7 @@ For example
 /**
  * @api
  * @test
+ * @parametor:foo:string:this is a foo resource
  **
  public post_on_some_route()
  {
@@ -17,7 +18,7 @@ For example
         'baz' => 2
     ];
     
-    @parametor:foo:string:this is a foo resource
+    
     $this->call('POST', '/api/v1/foo', $payload);
     
     //Do some real tests assertions here
