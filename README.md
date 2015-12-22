@@ -17,7 +17,7 @@ For example
         'baz' => 2
     ];
     
-    @parametor:foo:string
+    @parametor:foo:string:this is a foo resource
     $this->call('POST', '/api/v1/foo', $payload);
     
     //Do some real tests assertions here
@@ -27,7 +27,11 @@ For example
 The **convetions** @api tells the documentation tool to convert this method to Markdown as well as $payload
 shows a good example of the payload.
 
-The name of the test becomes the Title on the API doc so we would end up with this markdown 
+The name of the test becomes the Title on the API doc so we would end up with this markdown.
+
+And call out Paremeter in the URL like `foo` in this case the user can know it is a string.
+
+So `@parametor:foo:string:this is a foo resource` is really `@parametor:example in uri:type:description`
 
 ** **Example Output** **
 
