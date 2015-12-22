@@ -17,6 +17,7 @@ For example
         'baz' => 2
     ];
     
+    @parametor:foo:string
     $this->call('POST', '/api/v1/foo', $payload);
     
     //Do some real tests assertions here
@@ -35,6 +36,10 @@ The name of the test becomes the Title on the API doc so we would end up with th
 ### Method Post 
 
 ### URI '/api/v1/foo'
+
+### Parameters
+
+#### foo as string
 
 ### Payload
 
